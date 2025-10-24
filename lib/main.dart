@@ -57,9 +57,14 @@ Container(
         margin: EdgeInsets.all(10),
         padding: EdgeInsets.all(10),
       decoration: BoxDecoration(
-        color: const Color.fromARGB(255, 105, 95, 163),
+        gradient: LinearGradient(
+          begin: Alignment.topRight,
+          end: Alignment.bottomLeft,
+          colors: [Colors.blue, Colors.yellow],
+        ),
         borderRadius: BorderRadius.circular(25),
       ),
+        transform: Matrix4.rotationZ(0.1),
         child: Text("bjirrrr lahhh keren bet co!",style: TextStyle(color: Colors.white),),
 
       ),
