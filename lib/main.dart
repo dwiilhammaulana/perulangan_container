@@ -30,18 +30,44 @@ class MyHome extends StatelessWidget {
         actions: const [
           Icon(Icons.person, color: Colors.white),
           SizedBox(width: 15),
-          Icon(Icons.account_tree),
-          Icon(Icons.ac_unit)
+          Icon(Icons.account_tree, color: Colors.green,),
+          SizedBox(width: 15),
+          Icon(Icons.ac_unit),
+          SizedBox(width: 20)
         ],
       ),
-      body: SingleChildScrollView(
-        child: Container(
-          padding: const EdgeInsets.all(20.0),
-          child: const Column(
-            children: [],
-          ),
-        ),
+      body: Column(children: [
+Container(
+        width: 100,
+        height: 100,
+        alignment: Alignment.topCenter,
+        margin: EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 105, 95, 163),
+        borderRadius: BorderRadius.circular(25),
       ),
+        child: Text("bjirrrr lahhh keren bet co!",style: TextStyle(color: Colors.white),),
+
+      ),
+      Container(
+        width: 100,
+        height: 100,
+        alignment: Alignment.topCenter,
+        margin: EdgeInsets.all(10),
+        padding: EdgeInsets.all(10),
+      decoration: BoxDecoration(
+        color: const Color.fromARGB(255, 105, 95, 163),
+        borderRadius: BorderRadius.circular(25),
+      ),
+        child: Text("bjirrrr lahhh keren bet co!",style: TextStyle(color: Colors.white),),
+
+      ),
+      ],) 
+      
+      
+      
+      
     );
   }
 }
